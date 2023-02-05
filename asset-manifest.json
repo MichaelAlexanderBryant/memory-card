@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.f6e2d3d3.css",
+    "main.js": "/memory-card/static/js/main.31996d48.js",
+    "static/media/galileo.jpg": "/memory-card/static/media/galileo.3c81c0b003f7cc8adabc.jpg",
+    "static/media/dirac.jpg": "/memory-card/static/media/dirac.29756327a7875eeb94f3.jpg",
+    "static/media/heisenberg.jpg": "/memory-card/static/media/heisenberg.75569287070f2747a0ab.jpg",
+    "static/media/bohr.jpg": "/memory-card/static/media/bohr.ccb5b45cbd8a1082472d.jpg",
+    "static/media/newton.jpg": "/memory-card/static/media/newton.927d99024eb98205806a.jpg",
+    "static/media/feynman.jpg": "/memory-card/static/media/feynman.e49658da1faa9e5f32c8.jpg",
+    "static/media/einstein.jpg": "/memory-card/static/media/einstein.a80135e431ef5eb8cc32.jpg",
+    "static/media/schrodinger.jpg": "/memory-card/static/media/schrodinger.1b8ec0d1938f92bb8a4e.jpg",
+    "static/media/curie.jpg": "/memory-card/static/media/curie.087c7eef2b36c235e0e0.jpg",
+    "static/media/rutherford.jpg": "/memory-card/static/media/rutherford.f5b702f0f001c4128742.jpg",
+    "static/media/faraday.jpg": "/memory-card/static/media/faraday.4e7cdd782fa3b20f2fb4.jpg",
+    "static/media/maxwell.jpg": "/memory-card/static/media/maxwell.45987b8a2c95b2017ae8.jpg",
+    "index.html": "/memory-card/index.html",
+    "main.f6e2d3d3.css.map": "/memory-card/static/css/main.f6e2d3d3.css.map",
+    "main.31996d48.js.map": "/memory-card/static/js/main.31996d48.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6e2d3d3.css",
+    "static/js/main.31996d48.js"
+  ]
+}
