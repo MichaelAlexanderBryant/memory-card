@@ -1,38 +1,128 @@
+:root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    
+}
+
 .App {
-  text-align: center;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#header {
+    grid-row: 1 / 2;
+    border: 1px solid black;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#site-title {
+    font-size: 50px;
+    padding: 0px 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#red-title {
+    color: #d82e30;
 }
 
-.App-link {
-  color: #61dafb;
+#scores {
+    height: 100%;
+    padding: 0px 30px;
+    border-left: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#current-score {
+    padding-bottom: 10px;
+}
+
+#instructions {
+    height: 100%;
+    border-left: 1px solid black;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#content-container {
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#card-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.card {
+    padding: 100px;
+    border: 1px solid black;
+    background-size: contain;
+}
+
+#newton {
+    background-image: url(./assets/newton.jpg);
+}
+
+#einstein {
+    background-image: url(./assets/einstein.jpg);
+}
+
+#galileo {
+    background-image: url(./assets/galileo.jpg);
+}
+
+#curie {
+    background-image: url(./assets/curie.jpg);
+}
+
+#bohr {
+    background-image: url(./assets/bohr.jpg);
+}
+
+#maxwell {
+    background-image: url(./assets/maxwell.jpg);
+}
+
+#heisenberg {
+    background-image: url(./assets/heisenberg.jpg);
+}
+
+#feynman {
+    background-image: url(./assets/feynman.jpg);
+}
+
+#dirac {
+    background-image: url(./assets/dirac.jpg);
+}
+
+#schrodinger {
+    background-image: url(./assets/schrodinger.jpg);
+}
+
+#rutherford {
+    background-image: url(./assets/rutherford.jpg);
+}
+
+#faraday {
+    background-image: url(./assets/faraday.jpg);
 }
