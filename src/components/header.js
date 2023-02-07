@@ -8,7 +8,7 @@ function Header(props) {
                 <div id="current-score">Current Score: {props.currentScore}</div>
                 <div id="best-score">Best Score: {props.bestScore}</div>
             </span>
-            <span id="instructions">Instructions: click on all of the physicists without repeating to win.</span>
+            <span id="instructions">Instructions: click on all of the physicists without repeats to win.</span>
         </div>
     )
 }
