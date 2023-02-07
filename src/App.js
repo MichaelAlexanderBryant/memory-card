@@ -16,23 +16,24 @@ function App() {
     return array;
   };
 
-  let placeholderArray = ["newton", "einstein", "galileo", "curie", "bohr", "maxwell", "heisenberg", "feynman", "dirac", "schrodinger", "rutherford", "faraday"]
-  let shuffledArray = shuffle(placeholderArray);
-
+  let initialOrder = ["newton", "einstein", "galileo", "curie", "bohr", "maxwell", "heisenberg",
+  "feynman", "dirac", "schrodinger", "rutherford", "faraday"];
+  const [currentOrder, setCurrentOrder] = useState(shuffle(initialOrder));
 
   const [currentScore, setCurrentScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
   const [clicked, setClicked] = useState([]);
   const onClick = (e) => {
+    setCurrentOrder(shuffle(currentOrder));
     if (!(clicked.includes(e.target.id))) {
       setClicked( [...clicked, e.target.id] );
       setCurrentScore( currentScore + 1 );
     } else {
       if (currentScore > bestScore) {
         setBestScore( currentScore );
-        setClicked([]);
-        setCurrentScore(0);
       };
+      setClicked([]);
+      setCurrentScore(0);
     };
   };
   
@@ -42,7 +43,7 @@ function App() {
       <Header currentScore={currentScore} bestScore={bestScore}/>
       <div id="content-container">
         <div id="card-container">
-          {shuffledArray.map((x, index) => <Card key={index} id={x} onClick={onClick}/>)}
+          {currentOrder.map((x, index) => <Card key={index} id={x} onClick={onClick}/>)}
         </div>
       </div>
     </div>
